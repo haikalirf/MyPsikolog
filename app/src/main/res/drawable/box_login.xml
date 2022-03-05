@@ -11,12 +11,12 @@
             <item android:bottom="5dp" android:right="5dp">
                 <shape android:shape="rectangle">
                     <gradient
-                            android:angle="180"
-                            android:startColor="#C77DFF"
-                            android:endColor="#E0AAFF"/>
+                        android:angle="180"
+                        android:startColor="#C77DFF"
+                        android:endColor="#E0AAFF"/>
                     <stroke
-                            android:width="5dp"
-                            android:color="#9D4EDD"/>
+                        android:width="5dp"
+                        android:color="#9D4EDD"/>
                     <corners android:radius="20dp"/>
                 </shape>
             </item>

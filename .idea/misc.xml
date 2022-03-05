@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_button.xml" value="0.2525" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_login.xml" value="0.2525" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_main.xml" value="0.2525" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_text.xml" value="0.2525" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2525" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/activity_register.xml" value="0.33" />
       </map>
