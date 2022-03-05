@@ -57,7 +57,7 @@
             app:layout_constraintStart_toStartOf="parent">
             <EditText
                 android:id="@+id/etUsernameLogin_activity_login"
-                android:hint="Email/Username"
+                android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>

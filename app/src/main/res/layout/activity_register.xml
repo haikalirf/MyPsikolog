@@ -99,8 +99,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintBottom_toTopOf="@+id/tilEmailRegister_activity_register">
             <EditText
-                android:id="@+id/etUsernameRegister_activity_register"
-                android:hint="Username"
+                android:id="@+id/etDisplayNameRegister_activity_register"
+                android:hint="Display Name"
                 android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
