@@ -1,4 +1,4 @@
-package com.example.mypsikolog
+package com.example.homeactivity
 
 import org.junit.Test
 
