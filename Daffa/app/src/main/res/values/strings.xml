@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeActivity</string>
+    <string name="user">User</string>
+    <string name="welcome_back">Welcome Back,</string>
+    <string name="suicide_hotline_panic_button"><b>Suicide Hotline Panic Button</b></string>
+    <string name="today_s_reminder"><b>Today\'s Reminder</b></string>
+    <string name="tarik_nafas_tenangkan_pikiran_sejenak_dan_bersyukurlah_anda_masih_dapat_melihat_betapa_indahnya_dunia_hari_ini">Tarik nafas, tenangkan pikiran sejenak, dan bersyukurlah Anda masih dapat melihat betapa indahnya dunia hari ini.</string>
+    <string name="article_for_you"><b>Article for you</b></string>
+</resources>
