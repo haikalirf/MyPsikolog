@@ -15,6 +15,7 @@ import com.google.firebase.ktx.Firebase
 
 class RegisterActivity : AppCompatActivity() {
 
+    // create variables
     private lateinit var etDisplayName: EditText
     private lateinit var etEmail: EditText
     private lateinit var etPassword: EditText
@@ -27,20 +28,24 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
+        // initialize variables
         etDisplayName = findViewById(R.id.etDisplayNameRegister_activity_register)
         etEmail = findViewById(R.id.etEmailRegister_activity_register)
         etPassword = findViewById(R.id.etPasswordRegister_activity_register)
         btnRegister = findViewById(R.id.btnRegister_activity_register)
         tvLogin = findViewById(R.id.tvLogin_activity_register)
 
+        // get an instance of Firebase authenticatio
         auth = FirebaseAuth.getInstance()
-        
+
+        // moves user to login activity
         tvLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
-        
+
+        // creates an account for user
         btnRegister.setOnClickListener {
             val displayName = etDisplayName.text.toString().trim()
             val email = etEmail.text.toString().trim()
@@ -49,6 +54,7 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    // creates a firebase based account for user
     private fun signUp(displayName: String, email: String, password: String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
@@ -63,9 +69,9 @@ class RegisterActivity : AppCompatActivity() {
             }
     }
 
+    // adds user data to database
     private fun addUserToDatabase(displayName: String, email: String, uid: String) {
         dbRef = FirebaseDatabase.getInstance().reference
-
         dbRef.child("user").child(uid).setValue(User(displayName, email, uid))
     }
 }

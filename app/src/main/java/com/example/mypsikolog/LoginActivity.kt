@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_register.*
 
 class LoginActivity : AppCompatActivity() {
 
+    // create variables
     private lateinit var etEmail: EditText
     private lateinit var etPassword: EditText
     private lateinit var btnLogin: Button
@@ -25,26 +26,31 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // initialize variables
         etEmail = findViewById(R.id.etUsernameLogin_activity_login)
         etPassword = findViewById(R.id.etPasswordLogin_activity_login)
         btnLogin = findViewById(R.id.btnLogin_activity_login)
         tvRegister = findViewById(R.id.tvRegister_activity_login)
 
+        // get an instance of Firebase authentication
         auth = FirebaseAuth.getInstance()
-        
+
+        // moves user to RegisterActivity
         tvRegister.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
             finish()
         }
-        
+
+        // checks for login and moves user MenuActivity
         btnLogin.setOnClickListener {
-            val email = etEmail.text.toString().trim()
-            val password = etPassword.text.toString().trim()
+            val email = etEmail.text.toString()
+            val password = etPassword.text.toString()
             login(email, password)
         }
     }
 
+    // authentication of user login
     private fun login(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
