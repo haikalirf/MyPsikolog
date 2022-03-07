@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">MyPsikolog</string>
-    <string name="welcome_back"><b>Welcome Back!</b></string>
-    <string name="don_t_have_an_account_register_now">Don\'t have an account?</string>
-    <string name="register_here"><u><b>Sign Up</b></u></string>
-    <string name="welcome"><b>Welcome :)</b></string>
-    <string name="login"><u><b>Login</b></u></string>
-</resources>

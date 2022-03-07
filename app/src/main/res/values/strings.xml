@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyPsikolog</string>
+    <string name="welcome_back_login"><b>Welcome Back!</b></string>
+    <string name="don_t_have_an_account_register_now">Don\'t have an account?</string>
+    <string name="register_here"><u><b>Sign Up</b></u></string>
+    <string name="welcome"><b>Welcome :)</b></string>
+    <string name="login"><u><b>Login</b></u></string>
+    <string name="user">User</string>
+    <string name="welcome_back">Welcome Back,</string>
+    <string name="suicide_hotline_panic_button"><b>Suicide Hotline Panic Button</b></string>
+    <string name="today_s_reminder"><b>Today\'s Reminder</b></string>
+    <string name="tarik_nafas_tenangkan_pikiran_sejenak_dan_bersyukurlah_anda_masih_dapat_melihat_betapa_indahnya_dunia_hari_ini">Tarik nafas, tenangkan pikiran sejenak, dan bersyukurlah Anda masih dapat melihat betapa indahnya dunia hari ini.</string>
+    <string name="article_for_you"><b>Article for you</b></string>
+</resources>
