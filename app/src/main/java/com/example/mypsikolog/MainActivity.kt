@@ -1,4 +1,4 @@
-package com.example.homeactivity
+package com.example.mypsikolog
 
 import android.content.Intent
 import android.net.Uri

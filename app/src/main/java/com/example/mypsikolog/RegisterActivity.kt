@@ -7,12 +7,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.example.homeactivity.MainActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -36,7 +33,7 @@ class RegisterActivity : AppCompatActivity() {
         btnRegister = findViewById(R.id.btnRegister_activity_register)
         tvLogin = findViewById(R.id.tvLogin_activity_register)
 
-        // get an instance of Firebase authenticatio
+        // get an instance of Firebase authentication
         auth = FirebaseAuth.getInstance()
 
         // moves user to login activity
