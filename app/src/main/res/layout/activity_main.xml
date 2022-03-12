@@ -61,38 +61,39 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:padding="30dp">
 
-    <ImageButton
-        android:id="@+id/btn_homeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/biggerhomeclicked2"
-        app:layout_constraintTop_toTopOf="@+id/menuBar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="5dp"
-        />
+        <ImageButton
+            android:id="@+id/btn_homeButton_activity_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/biggerhomeclicked2"
+            app:layout_constraintTop_toTopOf="@+id/menuBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="5dp"
+            />
 
-    <ImageButton
-        android:id="@+id/btn_chatButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_homeButton"
-        android:src="@drawable/unclickedchatbtn"
-        />
+        <ImageButton
+            android:id="@+id/btn_chatButton_activity_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_homeButton_activity_main"
+            android:src="@drawable/unclickedchatbtn"
+            android:clickable="true"
+            />
 
-    <ImageButton
-        android:id="@+id/btn_lifestyleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_homeButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/unclickedlifestylebtn"
-        />
+        <ImageButton
+            android:id="@+id/btn_lifestyleButton_activity_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_homeButton_activity_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/unclickedlifestylebtn"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
