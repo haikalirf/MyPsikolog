@@ -29,10 +29,13 @@
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
         <activity
             android:name=".MainChatActivity"
-            android:exported="true"></activity>
+            android:exported="true"/>
+        <activity
+            android:name=".MyProfileActivity"
+            android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts"

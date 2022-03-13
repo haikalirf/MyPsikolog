@@ -14,7 +14,7 @@ class MyProfileActivity : AppCompatActivity() {
     private lateinit var auth : FirebaseAuth
     private lateinit var logouttv : TextView
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_myprofile)
 

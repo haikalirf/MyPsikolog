@@ -11,13 +11,14 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
 
     private lateinit var btnChatButton: ImageButton
+    private lateinit var ivUserIcon: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         btnChatButton = findViewById(R.id.btn_chatButton_activity_main)
-        var ivUserIcon = findViewById<ImageView>(R.id.iv_userIcon)
+        ivUserIcon = findViewById(R.id.iv_userIcon)
 
         val buttonSuicideHotline = findViewById<Button>(R.id.btn_suicideHotline)
         buttonSuicideHotline.setOnClickListener{
