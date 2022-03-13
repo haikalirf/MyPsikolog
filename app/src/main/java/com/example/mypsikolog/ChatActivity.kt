@@ -26,8 +26,8 @@ class ChatActivity : AppCompatActivity() {
     private lateinit var messageList: ArrayList<Message>
     private lateinit var dbRef: DatabaseReference
 
-    var receiverRoom: String? = null
-    var senderRoom: String? = null
+    private var receiverRoom: String? = null
+    private var senderRoom: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
