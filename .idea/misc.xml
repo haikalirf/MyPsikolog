@@ -6,19 +6,30 @@
         <entry key="..\:/Programming/Android Studio/MyPsikolog/Haikal/app/src/main/res/layout/activity_login.xml" value="0.19022289766970618" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/Haikal/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/Haikal/app/src/main/res/layout/activity_register.xml" value="0.203125" />
-        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_button.xml" value="0.2525" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_button.xml" value="0.22" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_login.xml" value="0.2525" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_main.xml" value="0.2525" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_other_user_name_chat.xml" value="0.207" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_other_user_time.xml" value="0.207" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_text.xml" value="0.2525" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_text_input_inside.xml" value="0.207" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_textinput.xml" value="0.207" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_user_layout.xml" value="0.207" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_user_message.xml" value="0.207" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_user_message_time.xml" value="0.207" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/box_user_name_chat.xml" value="0.207" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2525" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/drawable/purplebox.xml" value="0.207" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/activity_chat.xml" value="0.33" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/activity_main_chat.xml" value="0.33" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/activity_menu.xml" value="0.14444444444444443" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/other_user_message_layout.xml" value="0.33" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/sent_layout.xml" value="0.38697916666666665" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/user_layout.xml" value="0.33" />
+        <entry key="..\:/Programming/Android Studio/MyPsikolog/app/src/main/res/layout/user_message_layout.xml" value="0.38697916666666665" />
       </map>
     </option>
   </component>

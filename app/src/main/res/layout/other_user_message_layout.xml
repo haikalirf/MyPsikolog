@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMessageBox_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp">
+
+        <TextView
+            android:id="@+id/tvMessage_other_user_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_other_user_name_chat"
+            android:paddingVertical="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="30dp"
+            android:text="this is recieved message"
+            android:textColor="@color/white_darker"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTime_other_user_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/box_other_user_time"
+            android:paddingHorizontal="10dp"
+            android:gravity="end"
+            android:text="time"
+            android:textSize="12sp"
+            android:textColor="@color/white_darker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage_other_user_message_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivTip_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/clMessageBox_message_layout"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/message_tip_other" />
+
+
+</RelativeLayout>
