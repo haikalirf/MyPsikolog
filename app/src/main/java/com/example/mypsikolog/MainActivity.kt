@@ -23,13 +23,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var reminderTV: TextView
     private val CHANNEL_ID = "channel_ID_01"
     private val notificationid = 101
+    private lateinit var ivUserIcon: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         btnChatButton = findViewById(R.id.btn_chatButton_activity_main)
-        var ivUserIcon = findViewById<ImageView>(R.id.iv_userIcon)
+        ivUserIcon = findViewById(R.id.iv_userIcon)
 
         val buttonSuicideHotline = findViewById<Button>(R.id.btn_suicideHotline)
         buttonSuicideHotline.setOnClickListener{
