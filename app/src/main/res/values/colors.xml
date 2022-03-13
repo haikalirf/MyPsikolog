@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="white_darker">#FCFCFC</color>
 
+    <!-- MY PSIKOLOG TEMPLATE -->
     <color name="pink_main">#E0AAFF</color>
     <color name="pink_darker1">#C77DFF</color>
     <color name="pink_darker2">#9D4EDD</color>
@@ -17,4 +18,6 @@
     <color name="pink_darker5">#3C096C</color>
     <color name="pink_darker6">#240046</color>
     <color name="pink_darker7">#10002B</color>
+
+    <color name="pink_grey">#DBC1EF</color>
 </resources>
