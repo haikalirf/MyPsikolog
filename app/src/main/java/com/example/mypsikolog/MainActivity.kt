@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         btnChatButton = findViewById(R.id.btn_chatButton_activity_main)
         ivUserIcon = findViewById(R.id.iv_userIcon)
+        reminderTV = findViewById(R.id.tv_reminderText)
 
         val buttonSuicideHotline = findViewById<Button>(R.id.btn_suicideHotline)
         buttonSuicideHotline.setOnClickListener{
