@@ -13,7 +13,5 @@ class User {
         this.email = email
         this.uid = uid
         this.isPsikolog = false
-
-        // stopped at 50:40
     }
 }

@@ -56,6 +56,7 @@ class ChatActivity : AppCompatActivity() {
         backButton.setOnClickListener {
             val intent = Intent(this, MainChatActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         dbRef.child("chats").child(senderRoom!!).child("messages").addValueEventListener(object: ValueEventListener {
@@ -73,7 +74,7 @@ class ChatActivity : AppCompatActivity() {
 
         sendButton.setOnClickListener {
             val message = textInput.text.toString()
-            val sdf = SimpleDateFormat("hh:mm aa")
+            val sdf = SimpleDateFormat("hh:mm aa dd/MM/yy")
             val currentTime = sdf.format(Date())
             val messageObject = Message(message, currentTime, senderUid)
 

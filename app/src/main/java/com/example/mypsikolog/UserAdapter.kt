@@ -16,16 +16,19 @@ class UserAdapter(val context: Context, val userList: ArrayList<User>): Recycler
     private var dbRef: DatabaseReference = FirebaseDatabase.getInstance().getReference()
     private var auth: FirebaseAuth = FirebaseAuth.getInstance()
 
+    // creates a layout of users
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
         val view: View = LayoutInflater.from(context).inflate(R.layout.user_layout, parent, false)
         return UserViewHolder(view)
     }
 
+    // to input data into users
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val currentUser = userList[position]
         holder.name.text = currentUser.displayName
         val room = currentUser.uid + auth.currentUser?.uid
-        dbRef.child("chats").child(room!!).child("messages").limitToLast(1).addValueEventListener(object:
+        // gets the last/newest data from messages
+        dbRef.child("chats").child(room).child("messages").limitToLast(1).addValueEventListener(object:
             ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (postSnapshot in snapshot.children) {
@@ -42,10 +45,12 @@ class UserAdapter(val context: Context, val userList: ArrayList<User>): Recycler
         }
     }
 
+    // gets the size of userList
     override fun getItemCount(): Int {
         return userList.size
     }
 
+    // a view holder for user
     class UserViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val profilePicture = itemView.findViewById<ImageView>(R.id.ivProfilePicture_user_layout)
         val name = itemView.findViewById<TextView>(R.id.tvName_user_layout)

@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btnBack_activity_main_chat"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="20dp"
@@ -36,7 +36,7 @@
             android:fontFamily="@font/open_sans"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toEndOf="@+id/btnBack_activity_main_chat"
             app:layout_constraintTop_toTopOf="parent" />
 
 

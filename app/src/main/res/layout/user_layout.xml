@@ -43,6 +43,6 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="20dp"
         android:fontFamily="@font/open_sans"
-        android:text="Test Time" />
+        android:text="" />
 
 </RelativeLayout>
