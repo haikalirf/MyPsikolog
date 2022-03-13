@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Kuliah/MyPsikolog/app/src/main/res/drawable/header_background.xml" value="0.2595" />
+        <entry key="..\:/Kuliah/MyPsikolog/app/src/main/res/drawable/purplebox.xml" value="0.2595" />
+        <entry key="..\:/Kuliah/MyPsikolog/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kuliah/MyPsikolog/app/src/main/res/layout/activity_myprofile.xml" value="0.264" />
+        <entry key="..\:/Kuliah/MyPsikolog/app/src/main/res/layout/myprofile.xml" value="0.25416666666666665" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/Haikal/app/src/main/res/layout/activity_login.xml" value="0.19022289766970618" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/Haikal/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Programming/Android Studio/MyPsikolog/Haikal/app/src/main/res/layout/activity_register.xml" value="0.203125" />

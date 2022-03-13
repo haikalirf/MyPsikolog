@@ -2,11 +2,11 @@ package com.example.mypsikolog
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
-import com.example.mypsikolog.R
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnChatButton = findViewById(R.id.btn_chatButton_activity_main)
+        var ivUserIcon = findViewById<ImageView>(R.id.iv_userIcon)
 
         val buttonSuicideHotline = findViewById<Button>(R.id.btn_suicideHotline)
         buttonSuicideHotline.setOnClickListener{
@@ -29,6 +30,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, MainChatActivity::class.java)
             startActivity(intent)
         }
+
+        ivUserIcon.setOnClickListener{
+            val intent = Intent(this, MyProfileActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
 

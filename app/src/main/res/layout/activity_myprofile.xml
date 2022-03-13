@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FAF6F6">
+
+    <!-- TOP -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LayoutHeaderMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/backPressMyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/iv_backArrowMyProfile"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/pointingleftarrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/iv_backArrowMyProfile"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="My Profile"
+                android:textSize="20sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/pink_darker3"
+                android:layout_marginLeft="10dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- PROFILE DISPLAY -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CL_profileDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutHeaderMyProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/purplebox">
+
+        <ImageView
+            android:id="@+id/iv_userProfileMyProfile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/usericon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/LL_UserInfo"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="25dp"/>
+
+        <LinearLayout
+            android:id="@+id/LL_UserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/iv_userProfileMyProfile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_userNameUserLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="User_Name"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans_bold"/>
+
+            <TextView
+                android:id="@+id/tv_noHPMyProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/iv_userProfileMyProfile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="+6281627526390"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_umurMyProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18 tahun"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/whitepen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="40dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ACCOUNT SECTION -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CL_accountSectionMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/CL_profileDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_accountPrefMyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:textSize="20sp"
+            android:fontFamily="@font/open_sans_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/pink_darker7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_accountPrefMyProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_changeLanguageMyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Language"
+                android:textSize="14sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:background="@color/pink_grey"
+                android:paddingVertical="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="25dp"
+                android:drawableEnd="@drawable/rightarrowchevron"
+                android:textColor="@color/pink_darker7"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_friendLists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friend Lists"
+                android:textSize="14sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:background="@color/pink_grey"
+                android:paddingVertical="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="25dp"
+                android:drawableEnd="@drawable/rightarrowchevron"
+                android:textColor="@color/pink_darker7"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/tv_favouritePsychologist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Favourite Psychologist"
+                android:textSize="14sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:background="@color/pink_grey"
+                android:paddingVertical="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="25dp"
+                android:drawableEnd="@drawable/rightarrowchevron"
+                android:textColor="@color/pink_darker7"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- PREFERENCE SECTION -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CL_preferenceSectionMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/CL_accountSectionMyProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_preferenceMyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preference"
+            android:textSize="20sp"
+            android:fontFamily="@font/open_sans_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/pink_darker7"/>
+
+        <LinearLayout
+            android:id="@+id/LL_preferenceMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_preferenceMyProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink_grey"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Notifications"
+                    android:textColor="@color/pink_darker7"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <Switch
+                    android:id="@+id/switch_notificationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="20dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink_grey"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Daily Motivation"
+                    android:textColor="@color/pink_darker7"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <Switch
+                    android:id="@+id/switch_dailyNotifSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="20dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CL_preferenceSectionMyProfile"
+        android:text="@string/log_out"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="#F51818"
+        android:textSize="16dp"
+        android:background="@color/pink_grey"
+        android:paddingVertical="5dp"
+        android:drawableStart="@drawable/logoutbox"
+        android:paddingStart="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
