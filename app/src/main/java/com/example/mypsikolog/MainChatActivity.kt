@@ -2,14 +2,12 @@ package com.example.mypsikolog
 
 import android.content.Intent
 import android.os.Bundle
-import android.renderscript.Sampler
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.activity_main_chat.*
 
 class MainChatActivity : AppCompatActivity() {
 
@@ -19,7 +17,6 @@ class MainChatActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var dbRef: DatabaseReference
     private lateinit var homeButton: ImageButton
-    private lateinit var backButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +30,6 @@ class MainChatActivity : AppCompatActivity() {
         adapter = UserAdapter(this, userList)
 
         homeButton = findViewById(R.id.btn_homeButton_activity_main_chat)
-        backButton = findViewById(R.id.btnBack_activity_main_chat)
         userRecyclerView = findViewById(R.id.rvChatList_activity_main_chat)
         userRecyclerView.layoutManager = LinearLayoutManager(this)
         userRecyclerView.adapter = adapter
@@ -63,10 +59,6 @@ class MainChatActivity : AppCompatActivity() {
 
         // intents to return to MainActivity
         homeButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-        backButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

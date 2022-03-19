@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_darker">#FCFCFC</color>
+    <color name="grey">#E9E9E9</color>
 
     <!-- MY PSIKOLOG TEMPLATE -->
     <color name="pink_main">#E0AAFF</color>

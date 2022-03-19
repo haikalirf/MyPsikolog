@@ -14,6 +14,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
     private val CHANNEL_ID = "channel_ID_01"
     private val notificationid = 101
     private lateinit var ivUserIcon: ImageView
+    private lateinit var clAppointment: ConstraintLayout
+    private lateinit var clChat: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         btnChatButton = findViewById(R.id.btn_chatButton_activity_main)
         ivUserIcon = findViewById(R.id.iv_userIcon)
         reminderTV = findViewById(R.id.tv_reminderText)
+        clChat = findViewById(R.id.clChat_activity_main)
+        clAppointment = findViewById(R.id.clAppointment_activity_main)
 
         val buttonSuicideHotline = findViewById<Button>(R.id.btn_suicideHotline)
         buttonSuicideHotline.setOnClickListener{
@@ -47,6 +52,16 @@ class MainActivity : AppCompatActivity() {
 
         ivUserIcon.setOnClickListener{
             val intent = Intent(this, MyProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        clChat.setOnClickListener {
+            val intent = Intent(this, MainChatActivity::class.java)
+            startActivity(intent)
+        }
+
+        clAppointment.setOnClickListener {
+            val intent = Intent(this, AppointmentActivity::class.java)
             startActivity(intent)
         }
 

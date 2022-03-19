@@ -33,6 +33,7 @@ class ChatActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
 
+        // create variables
         backButton = findViewById(R.id.ibBack_activity_chat)
         textInput = findViewById(R.id.etTextInput_activity_chat)
         sendButton = findViewById(R.id.ivSendButton_activity_chat)
@@ -43,22 +44,27 @@ class ChatActivity : AppCompatActivity() {
         chatRecyclerView.layoutManager = LinearLayoutManager(this)
         chatRecyclerView.adapter = messageAdapter
 
-        val name = intent.getStringExtra("name")
-        val receiverUid = intent.getStringExtra("uid")
+        // sets some variables
+        val name = intent.getStringExtra("nameChat")
+        val receiverUid = intent.getStringExtra("uidChat")
         val senderUid = FirebaseAuth.getInstance().currentUser?.uid
         dbRef = FirebaseDatabase.getInstance().getReference()
 
+        // creates a senderRoom and ReceiverRoom for 2 way conversation between users
         senderRoom = receiverUid + senderUid
         receiverRoom = senderUid + receiverUid
 
+        //sets the top screen as the name of the other user
         currentUser.text = name
 
+        // intent to move to main chat activity
         backButton.setOnClickListener {
             val intent = Intent(this, MainChatActivity::class.java)
             startActivity(intent)
             finish()
         }
 
+        // gets message from the database and put them  to the chat
         dbRef.child("chats").child(senderRoom!!).child("messages").addValueEventListener(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 messageList.clear()
@@ -72,6 +78,7 @@ class ChatActivity : AppCompatActivity() {
             }
         })
 
+        // sends a message to the database
         sendButton.setOnClickListener {
             val message = textInput.text.toString()
             val sdf = SimpleDateFormat("hh:mm aa dd/MM/yy")

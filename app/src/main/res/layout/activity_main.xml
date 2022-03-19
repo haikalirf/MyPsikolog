@@ -121,6 +121,7 @@
 
         <!-- CHAT WITH PSYCHOLOGIST -->
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clChat_activity_main"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:background="@drawable/white_card"
@@ -158,6 +159,7 @@
 
         <!-- MAKE AN APPOINTMENT -->
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAppointment_activity_main"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:background="@drawable/white_card"

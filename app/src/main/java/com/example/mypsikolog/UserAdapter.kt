@@ -37,10 +37,11 @@ class UserAdapter(val context: Context, val userList: ArrayList<User>): Recycler
             }
             override fun onCancelled(error: DatabaseError) {}
         })
+        // clicking on the user
         holder.itemView.setOnClickListener {
             val intent = Intent(context, ChatActivity::class.java)
-            intent.putExtra("name", currentUser.displayName)
-            intent.putExtra("uid", currentUser.uid)
+            intent.putExtra("nameChat", currentUser.displayName)
+            intent.putExtra("uidChat", currentUser.uid)
             context.startActivity(intent)
         }
     }
