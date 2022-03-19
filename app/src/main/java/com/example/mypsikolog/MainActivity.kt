@@ -56,11 +56,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         clChat.setOnClickListener {
-            val intent = Intent(this, MainChatActivity::class.java)
-            startActivity(intent)
-        }
-
-        clAppointment.setOnClickListener {
             val intent = Intent(this, AppointmentActivity::class.java)
             startActivity(intent)
         }

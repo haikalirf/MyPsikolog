@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".AboutPsychologistActivity">
 
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="645dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -54,7 +56,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/open_sans"
                 android:text="Psychologist Name"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginHorizontal="40dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:fontFamily="@font/open_sans"
                 android:text="About"
                 android:textSize="20sp"
@@ -79,8 +81,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:fontFamily="@font/open_sans"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
                 android:paddingHorizontal="40dp"
                 android:text="Pulvinar congue elementum senectus nisl adipiscing nec suscipit condimentum sagittis fringilla posuere. Sodales dapibus, sagittis senectus eu rhoncus. Dolor volutpat et etiam maecenas aptent ultricies."
                 android:textSize="17sp"
@@ -107,8 +109,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginTop="10dp"
-                android:paddingHorizontal="40dp"
                 android:fontFamily="@font/open_sans"
+                android:paddingHorizontal="40dp"
                 android:text="Test Address"
                 android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -148,8 +150,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginStart="170dp"
-                android:layout_marginEnd="40dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
                 android:fontFamily="@font/open_sans"
                 android:text="Online Chat Price"
                 android:textSize="17sp"
@@ -162,11 +164,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginHorizontal="40dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginVertical="10dp"
                 android:fontFamily="@font/open_sans"
                 android:text="Appointment"
                 android:textSize="17sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvOnlineChatPriceText_activity_about_psychologist" />
 
@@ -176,47 +179,63 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginStart="170dp"
-                android:layout_marginEnd="40dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
                 android:fontFamily="@font/open_sans"
                 android:text="Appointment Price"
                 android:textSize="17sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvOnlineChatPriceText_activity_about_psychologist" />
 
-            <Button
-                android:id="@+id/btnAppointment_activity_about_psychologist"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="200dp"
-                android:paddingHorizontal="10dp"
-                android:textColor="@color/pink_darker3"
-                android:background="@color/pink_grey"
-                android:text="Appointment"
-                android:fontFamily="@font/open_sans"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvAppointmentPriceText_activity_about_psychologist" />
-
-            <Button
-                android:id="@+id/btnChat_activity_about_psychologist"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="200dp"
-                android:paddingHorizontal="10dp"
-                android:background="@color/pink_grey"
-                android:text="Chat Now"
-                android:textColor="@color/pink_darker3"
-                android:fontFamily="@font/open_sans"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvAppointmentPriceText_activity_about_psychologist" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnAppointment_activity_about_psychologist"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/pink_grey"
+            android:fontFamily="@font/open_sans"
+            android:paddingHorizontal="10dp"
+            android:text="Appointment"
+            android:textColor="@color/pink_darker3"
+            android:drawableStart="@drawable/appointment_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnChat_activity_about_psychologist"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/pink_grey"
+            android:fontFamily="@font/open_sans"
+            android:paddingHorizontal="10dp"
+            android:text="Chat Now"
+            android:textColor="@color/pink_darker3"
+            android:drawableStart="@drawable/chatclicked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,12 +35,12 @@ class AboutPsychologistActivity : AppCompatActivity() {
         about.text = intent.getStringExtra("about")
         address.text = intent.getStringExtra("address")
         if (intent.getIntExtra("chatPrice", 0) > 0) {
-            chatPrice.text = String.format("Rp. %,d,-", intent.getIntExtra("chatPrice", 0))
+            chatPrice.text = String.format("Rp. %,d.-", intent.getIntExtra("chatPrice", 0))
         } else {
             chatPrice.text = "Free"
         }
         if (intent.getIntExtra("appointmentPrice", 0) > 0) {
-            appointmentPrice.text = String.format("Rp. %,d,-", intent.getIntExtra("appointmentPrice", 0))
+            appointmentPrice.text = String.format("Rp. %,d.-", intent.getIntExtra("appointmentPrice", 0))
         } else {
             appointmentPrice.text = "Free"
         }
