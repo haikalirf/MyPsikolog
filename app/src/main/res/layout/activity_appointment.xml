@@ -10,6 +10,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/svSearch_activity_appointment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -47,9 +48,9 @@
         android:layout_margin="20dp"
         android:background="@drawable/searchview_background"
         app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnPaid_activity_appointment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:queryBackground="@android:color/transparent"
         app:queryHint="Type here to search" />
 
@@ -68,12 +69,12 @@
         android:id="@+id/btnPaid_activity_appointment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:background="@drawable/empty_background"
         android:text="Paid"
+        android:layout_marginBottom="525dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/svSearch_activity_appointment" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRating_activity_appointment"
@@ -88,9 +89,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPsychologist_activity_appointment"
-        android:layout_width="409dp"
-        android:layout_height="523dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
