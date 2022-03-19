@@ -42,8 +42,10 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/star"
         android:fontFamily="@font/open_sans"
-        android:text="stars" />
+        android:text="stars"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvPrice_appoinment_layout"

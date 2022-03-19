@@ -26,7 +26,7 @@ class AppointmentAdapter(val context: Context, private val userList: ArrayList<U
         val currentUser = userList[position]
         holder.name.text = currentUser.displayName
         if (currentUser.chatPrice!! > 0) {
-            holder.price.text = String.format("Rp. %,d,-", currentUser.chatPrice)
+            holder.price.text = String.format("Rp. %,d.-", currentUser.chatPrice)
         } else {
             holder.price.text = "FREE"
         }
