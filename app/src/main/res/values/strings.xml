@@ -14,4 +14,12 @@
     <string name="preference"><b>Preference</b></string>
     <string name="account"><b>Account</b></string>
     <string name="log_out"><b> Log Out</b></string>
+    <string name="lifestyle"><b>LifeStyle</b></string>
+    <string name="daily_motivation">Daily Motivation</string>
+    <string name="exercises">Good Morning! Here’s our recommendation for your Morning exercise!</string>
+    <string name="set_1">Set 1</string>
+    <string name="see_more">See More</string>
+    <string name="exercise">EXERCISE</string>
+    <string name="foodrecom"><b>Food Recommendation For You</b></string>
+    <string name="forum">Forum</string>
 </resources>

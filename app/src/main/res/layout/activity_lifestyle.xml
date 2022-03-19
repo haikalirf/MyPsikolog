@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_lifestyle">
+
+    <!-- DAILY MOTIVATION -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lifestyle"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="25sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_card"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/daily_motivation"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_marginStart="16dp"
+                android:layout_marginVertical="12dp"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="16dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_card"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="18dp">
+
+            <TextView
+                android:id="@+id/tv_exerciseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/exercises"
+                android:textColor="@color/pink_darker3"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_exerciseTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_exerciseSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_exerciseMain"
+                    android:text="@string/set_1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginVertical="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_exerciseSeeMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_exerciseMain"
+                    android:text="@string/see_more"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/pink_darker3"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginVertical="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_exerciseMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/tv_exerciseSet"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="@string/exercise"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/foodrecom"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans_bold"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/listitem_foodrecommendation"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

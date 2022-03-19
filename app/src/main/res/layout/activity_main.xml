@@ -42,7 +42,7 @@
             app:layout_constraintStart_toEndOf="@+id/tvWelcome"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_userIcon"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -108,7 +108,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- 4 CARD DI BAWAH HEADER LAYOUT -->
+    <!-- 3 CARD DI BAWAH HEADER LAYOUT -->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/navigationCard"
         android:layout_width="wrap_content"
@@ -218,7 +218,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/open_sans_semibold"
-                android:text="Make an Appointment"
+                android:text="@string/forum"
                 android:textColor="@color/pink_darker7"
                 app:layout_constraintTop_toBottomOf="@id/ivforum"
                 app:layout_constraintBottom_toBottomOf="parent"

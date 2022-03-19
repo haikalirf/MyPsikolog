@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/purplebox">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_userProfileMyProfile"
             android:layout_width="64dp"
             android:layout_height="64dp"

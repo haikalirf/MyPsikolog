@@ -21,6 +21,7 @@ import androidx.core.app.NotificationManagerCompat
 class MainActivity : AppCompatActivity() {
 
     private lateinit var btnChatButton: ImageButton
+    private lateinit var btnLifestyleButton : ImageButton
     private lateinit var reminderTV: TextView
     private val CHANNEL_ID = "channel_ID_01"
     private val notificationid = 101
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnChatButton = findViewById(R.id.btn_chatButton_activity_main)
+        btnLifestyleButton = findViewById(R.id.btn_lifestyleButton_activity_main)
         ivUserIcon = findViewById(R.id.iv_userIcon)
         reminderTV = findViewById(R.id.tv_reminderText)
         clChat = findViewById(R.id.clChat_activity_main)
@@ -47,6 +49,11 @@ class MainActivity : AppCompatActivity() {
 
         btnChatButton.setOnClickListener {
             val intent = Intent(this, MainChatActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnLifestyleButton.setOnClickListener{
+            val intent = Intent(this, activity_lifestyle::class.java)
             startActivity(intent)
         }
 

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPsikolog">
         <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_lifestyle"
+            android:exported="false" />
+        <activity
             android:name=".AboutPsychologistActivity"
             android:exported="false" />
         <activity
